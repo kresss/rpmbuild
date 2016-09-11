@@ -1,4 +1,4 @@
-%global _davsvn 2198
+%global _davsvn 2427
 %ifarch i686
 %global davarch x86
 %endif
@@ -7,7 +7,7 @@
 %endif
 
 Name:               davmail
-Version:            4.4.0
+Version:            4.7.2
 Release:            1%{?dist}
 Summary:            POP/IMAP/SMTP/Caldav/Carddav/LDAP gateway for Microsoft Exchange
 URL:                http://davmail.sourceforge.net/
@@ -31,7 +31,7 @@ Requires:           log4j
 Requires:           eclipse-swt
 
 
-BuildRequires:      java-1.7.0-openjdk-devel
+BuildRequires:      java-1.8.0-openjdk-devel
 BuildRequires:      ant
 BuildRequires:      desktop-file-utils
 BuildRequires:      xml-commons-apis
@@ -125,6 +125,9 @@ fi
 %{_mavenpomdir}/JPP-%{name}.pom
 
 %changelog
+* Sun Sep 11 2016 kresss <kresss@gmail.com> - 4.7.2-1
+- update to 4.7.2
+
 * Tue Nov 26 2013 maci <maci@satgnu.net> - 4.4.0-1
 - update to 4.4.0
 
